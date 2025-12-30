@@ -56,8 +56,8 @@ public class PlayerController : MonoBehaviour
     private void ReadMoveInput()
     {
         moveAxis = 0f;
-        if (Input.GetKey(KeyCode.A)) moveAxis -= 1f;
-        if (Input.GetKey(KeyCode.D)) moveAxis += 1f;
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) moveAxis -= 1f;
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) moveAxis += 1f;
     }
     #endregion
 

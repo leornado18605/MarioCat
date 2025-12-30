@@ -39,6 +39,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (ui) ui.SetHearts(hp);
+
         ClampRespawnIndex();
     }
 
@@ -61,6 +62,8 @@ public class PlayerHealth : MonoBehaviour
         if (hp <= 0) return;
         hp = Mathf.Max(0, hp - 1);
         if (ui) ui.SetHearts(hp);
+
+        DamageFlashUI.I?.Play();
 
         if (hp > 0) Respawn();
         else Lose();

@@ -16,8 +16,8 @@ public class CharacterSelectionMenu : MonoBehaviour
     [SerializeField] private Button[] pickButtons;
 
     [Header("Tween - Pick")]
-    [SerializeField] private float selectedScale = 1.15f;
-    [SerializeField] private float unselectedScale = 0.9f;
+    [SerializeField] private float selectedScale = 3f;
+    [SerializeField] private float unselectedScale = 3f;
     [SerializeField] private float selectedAlpha = 1f;
     [SerializeField] private float unselectedAlpha = 0.45f;
     [SerializeField] private float pickTweenTime = 0.2f;
@@ -111,9 +111,14 @@ public class CharacterSelectionMenu : MonoBehaviour
     private void ShowPanel(int index)
     {
         if (characterPanels == null) return;
+
         for (int i = 0; i < characterPanels.Length; i++)
-            if (characterPanels[i]) characterPanels[i].SetActive(i == index);
+        {
+            if (!characterPanels[i]) continue;
+            characterPanels[i].SetActive(true);
+        }
     }
+
 
     private void ApplySelectionVisual(int index, bool instant)
     {
@@ -147,6 +152,20 @@ public class CharacterSelectionMenu : MonoBehaviour
             }
 
             btn.interactable = selected;
+
+            if (characterPanels != null && i < characterPanels.Length && characterPanels[i])
+            {
+                var pcg       = characterPanels[i].GetComponent<CanvasGroup>();
+                if (!pcg) pcg = characterPanels[i].AddComponent<CanvasGroup>();
+
+                float panelAlpha = selected ? 1f : 0.35f;
+
+                pcg.DOKill();
+                if (instant) pcg.alpha = panelAlpha;
+                else pcg.DOFade(panelAlpha, pickTweenTime);
+            }
         }
+
+
     }
 }

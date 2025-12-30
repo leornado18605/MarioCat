@@ -408,8 +408,8 @@ MonoBehaviour:
   pickButtons:
   - {fileID: 381512209}
   - {fileID: 342782271}
-  selectedScale: 1.15
-  unselectedScale: 0.9
+  selectedScale: 4
+  unselectedScale: 3
   selectedAlpha: 1
   unselectedAlpha: 0.45
   pickTweenTime: 0.2
@@ -444,7 +444,7 @@ RectTransform:
   m_GameObject: {fileID: 342782269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 37.92159}
+  m_LocalScale: {x: 2.9607077, y: 6.0332, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1062127234}
@@ -452,7 +452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: -406}
+  m_AnchoredPosition: {x: 479, y: -405.25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342782271
@@ -577,7 +577,7 @@ RectTransform:
   m_GameObject: {fileID: 381512207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 37.92159}
+  m_LocalScale: {x: 2.9607077, y: 6.0332, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1044716545}
@@ -585,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: -406}
+  m_AnchoredPosition: {x: -552, y: -405.25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381512209
