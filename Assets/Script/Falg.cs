@@ -31,7 +31,7 @@ public class FlagChange : MonoBehaviour
     private void ChangeFlag()
     {
         changed = true;
-        AudioManager.I?.PlayCheckpoint();A
+        AudioManager.I?.PlayCheckpoint();
         if (flagRenderer && spriteB)
             flagRenderer.sprite = spriteB;
     }
