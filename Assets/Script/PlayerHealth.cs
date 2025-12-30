@@ -64,6 +64,7 @@ public class PlayerHealth : MonoBehaviour
         if (ui) ui.SetHearts(hp);
 
         DamageFlashUI.I?.Play();
+        AudioManager.I?.PlayHit();
 
         if (hp > 0) Respawn();
         else Lose();

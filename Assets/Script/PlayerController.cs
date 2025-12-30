@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         isJumping = true;
         if (animator) animator.SetBool(jumpParam, true);
+
+        AudioManager.I?.PlayJump();
     }
 
     private void UpdateJumpState()
