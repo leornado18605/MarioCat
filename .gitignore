@@ -1,0 +1,64 @@
+# =========================
+# Unity
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Asset import cache
+/AssetStoreTools*
+**/[Aa]ssets/AssetStoreTools*
+
+# Rider/VS/IDE
+.vs/
+.idea/
+.vscode/
+*.sln
+*.csproj
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+*.DotSettings.user
+
+# Unity auto-generated meta for folders can stay tracked; DO NOT ignore *.meta generally
+# (Unity needs .meta files)
+
+# Build outputs (optional extra)
+*.apk
+*.aab
+*.ipa
+*.app
+*.exe
+*.dll
+*.pdb
+
+# Crash / logs
+*.log
+*.stackdump
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Unity Collaborate (deprecated) / Plastic SCM
+# =========================
+.collabignore
+.plastic/
+plastic*
